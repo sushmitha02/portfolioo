@@ -14,6 +14,7 @@ puts "10 blog posts created"
   )
 end
 
+
 puts "5 skills created"
 
 9.times do |portfolio_item|
