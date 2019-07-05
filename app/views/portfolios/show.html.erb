@@ -7,7 +7,9 @@
 			<h1><%= @portfolio_item.title %></h1>
 
 			<em><%= @portfolio_item.subtitle %></em>
+			<hr>
 
+			
 			<p><%= @portfolio_item.body %></p>
 
 			<h2>Technologies Used:</h2>
@@ -17,7 +19,10 @@
 			</p>
 			<% end %>
 
-	
+			<%= link_to 'Edit', edit_portfolio_path(@portfolio_item) %> |
+			<%= link_to 'Back', portfolios_path %>
+
+
 		</div>
 	</div>
 	
