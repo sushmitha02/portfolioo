@@ -18,22 +18,30 @@
     <div class="site-wrapper-inner">
       <div class="cover-container">
 
-        <div id="background">
-          
+
+
+        <%= video_tag(
+          'video.webm',
+          id: 'background',
+          autoplay: true,
+          muted: true,
+          poster: 'water-image.jpg'
+
+          )
+          %>
+
+          <%= render "shared/application_nav" %>
+
+          <%= yield %>
+
+          <%= render "shared/application_footer" %>
+
+          <%= source_helper("application") %>
+
         </div>
-
-        <%= render "shared/application_nav" %>
-
-        <%= yield %>
-
-        <%= render "shared/application_footer" %>
-
-        <%= source_helper("application") %>
-
       </div>
     </div>
-  </div>
 
-</body>
+  </body>
 
-</html>
+  </html>
