@@ -3,7 +3,7 @@ class PortfoliosController < ApplicationController
 	layout 'portfolio'
 	
 	def index
-		@portfolio_items = Portfolio.by_position
+		@portfolio_items = Portfolio.page(params[:page]).per(6)
 	end
 
 	def sort
@@ -67,6 +67,8 @@ class PortfoliosController < ApplicationController
 		params.require(:portfolio).permit(:title,
 			:subtitle,
 			:body,
+			:main_image,
+			:thumb_image,
 			technologies_attributes: [:name]
 			)
 	end

@@ -1,9 +1,15 @@
 <div class="album text-muted">
-  <div class="container">
+	<div class="container">
+		<%= paginate @portfolio_items %>
 
-    <div id="sortables">
-      <%= render partial: 'portfolio_item', collection: @portfolio_items %>
-    </div>
-    
-  </div>
+		<div id="sortables">
+			
+
+			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
+			
+		</div>
+		<%= paginate @portfolio_items %>
+
+
+	</div>
 </div>
