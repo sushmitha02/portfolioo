@@ -68,4 +68,12 @@ gem 'devise', '~> 4.2'
 gem 'devcamp_view_tool', '~> 0.1.0'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
+
+
+gem 'jquery-rails'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
+gem 'carrierwave', '~> 1.3', '>= 1.3.1'
+gem 'mini_magick', '~> 4.9', '>= 4.9.3'
+gem 'carrierwave-aws', '~> 1.3'
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.4'
