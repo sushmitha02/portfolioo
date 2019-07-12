@@ -16,6 +16,8 @@
 //= require activestorage
 //= require html.sortable
 //= require cocoon
+//= require gritter
+
 //= require turbolinks
 
 //= require drag_n_drop
