@@ -6,12 +6,17 @@ class PortfoliosController < ApplicationController
 		@portfolio_items = Portfolio.page(params[:page]).per(6)
 	end
 
-	def sort
-		params[:order].each do |key, value|
-			Portfolio.find(value[:id]).update(position: value[:position])
-		end
 
-		render nothing: true
+	def sort
+		puts params.inspect
+		# byebug
+
+		# params[:order].each do |key, value|
+		# 	Portfolio.find(value[:id]).update(position: value[:position])
+		# end
+
+		# render nothing: true
+		render json: {status: '200'}
 	end
 
 	def angular

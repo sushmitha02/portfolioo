@@ -1,7 +1,8 @@
-<div class="card" id="sortable_<%= portfolio_item.id %>">
+
+<div class="card" id="sortable_<%= portfolio_item.id %>" data-id= "<%= portfolio_item.id %>" data-order="<%= portfolio_item.order_id %>">
+	<%= portfolio_item.order_id %>
   <%= image_tag portfolio_img(portfolio_item.thumb_image_url, 'thumb') %> 
   <p class="card-text">
     <span><%= link_to portfolio_item.title, portfolio_show_path(portfolio_item) %></span> <%= portfolio_item.subtitle %>
   </p>
-  
 </div>
