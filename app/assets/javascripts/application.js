@@ -19,5 +19,6 @@
 //= require gritter
 
 //= require turbolinks
+//= require_tree
 
 //= require drag_n_drop
