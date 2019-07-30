@@ -4,12 +4,12 @@
 
 		<div id="sortables">
 			
+			<% @portfolio_items.each do |portfolio_item| %>
+				<%= render 'portfolio_item', portfolio_item: portfolio_item %>
+			<% end %>
 
-			<%= render partial: 'portfolio_item', collection: @portfolio_items %>
-			
 		</div>
 		<%= paginate @portfolio_items %>
-
 
 	</div>
 </div>

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   resources :categories
 
   resources :portfolios, except: [:show] do
-    put :sort, on: :collection
+    get :sort, on: :collection
   end
 
   get 'angular-items', to: 'portfolios#angular'
