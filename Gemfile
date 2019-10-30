@@ -37,7 +37,7 @@ end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.2.4'
-gem 'devise', '~> 4.2'
+gem 'devise', '~> 4.7'
 gem 'devcamp_view_tool', '~> 0.1.0'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
